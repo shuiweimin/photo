@@ -1,0 +1,62 @@
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: [full-start] 1fr [main-start] 1fr 1fr 1fr [main-end] 1fr [full-end];
+  }
+  .main {
+    grid-column: full;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-column: full;
+  }
+  .nav {
+    flex-wrap: wrap;
+    background-color: rgba(1, 1, 1, 0.5);
+  }
+  .nav .nav-logo {
+    margin-left: 10px;
+  }
+  .nav .nav-list {
+    transition: all 0.5s ease-in-out;
+    height: 0;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+
+    place-content: center;
+    display: grid;
+  }
+  .nav-list.nav-list-active {
+    height: 200px;
+  }
+  .nav .nav-list li {
+    width: 100%;
+  }
+  .nav .nav-list li a {
+    margin-right: 0;
+  }
+  .close {
+    transition: all 1s ease-in-out;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    cursor: pointer;
+  }
+  .contract {
+    flex-wrap: wrap;
+  }
+  .contract > div {
+    width: 100%;
+    margin-left: 20%;
+  }
+  .tip-content::before {
+    left: -60%;
+  }
+  .tip-content::after {
+    right: -60%;
+  }
+}

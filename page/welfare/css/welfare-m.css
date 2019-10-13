@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  .wel-scheme img {
+    width: 100%;
+  }
+  .wel-scheme a {
+    margin-left: 5%;
+    width: 90%;
+    border: 1px rebeccapurple solid;
+    box-shadow: 1px 1px 8px 1px red;
+  }
+  .wel-scheme a span {
+    opacity: 1;
+  }
+}

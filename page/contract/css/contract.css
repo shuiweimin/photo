@@ -1,0 +1,138 @@
+.wel-banner {
+  background-position: 0 0;
+  position: relative;
+}
+
+.wel-banner .nav-logo {
+  margin-left: 0%;
+}
+
+.sample-tip {
+  grid-column: full;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: red;
+}
+
+span.left {
+  transform: translate(600px);
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+span.right {
+  transform: translate(-600px);
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+.contract-us-content {
+  display: flex;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: white;
+  justify-content: space-around;
+}
+
+.info {
+  width: 300px;
+}
+
+.info * {
+  margin-top: 50px;
+}
+
+.contract-form {
+  width: 530px;
+}
+
+.form {
+  height: 50px;
+  width: 70%;
+  position: relative;
+  margin: 30px auto;
+}
+
+.form input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding-top: 10px;
+}
+
+.form label {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid snow;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 1000px;
+  height: 100%;
+  width: 100%;
+  bottom: -1px;
+  border-bottom: 3px solid red;
+  transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+label span {
+  position: absolute;
+  font-size: 20px;
+  bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.form input:focus + label span,
+.form input:valid + label span {
+  bottom: 23px;
+  color: red;
+  font-style: italic;
+  font: 1em sans-serif;
+}
+
+.form input:focus + label::after,
+.form input:valid + label::after {
+  left: 0;
+}
+.form input:focus + label,
+.form input:valid + label {
+  left: 0;
+  border-bottom: 0px solid red;
+}
+.btn {
+  display: grid;
+  place-content: center;
+  margin-top: -40px;
+}
+
+button {
+  display: inline-block;
+  height: 46px;
+  width: 150px;
+  border-radius: 23px;
+  background-color: red;
+  position: relative;
+  border-color: whitesmoke;
+}
+
+button p {
+  position: absolute;
+  top: -16%;
+  left: 32%;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}

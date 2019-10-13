@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .city-content {
+    flex-wrap: wrap;
+  }
+
+  .city-content div {
+    width: 100%;
+  }
+  .meum {
+    flex-direction: row;
+    order: 10;
+  }
+  .meum div {
+    height: 100%;
+    border-right: 1px salmon solid;
+  }
+  .photos {
+    flex-direction: column;
+    height: 400px;
+  }
+  .open {
+    background-size: contain;
+  }
+}

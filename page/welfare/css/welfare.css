@@ -1,0 +1,76 @@
+.wel-banner {
+  background: url(../img/welbanner.png);
+  height: 900px;
+  background-position: -300px 0;
+}
+
+.wel-banner .nav-logo {
+  margin-left: 0%;
+}
+
+.wel-scheme {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wel-scheme .flex-left {
+  transform: translateY(-450px);
+  transition: all 1.5s ease-out;
+}
+
+.wel-scheme .flex-right {
+  transform: translateY(-450px);
+  transition: all 1.5s ease-out;
+}
+
+.wel-scheme a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wel-scheme .WelName {
+  display: grid;
+  background-color: gray;
+  height: 75px;
+  width: 100%;
+  place-content: center;
+  transition: opacity 0.5s ease-out 0;
+}
+
+.wel-scheme .price {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  transition: opacity 0.5s ease-out 0.5s;
+}
+
+.wel-scheme .info {
+  font-size: 12px;
+  transition: opacity 0.5s ease-out 1s;
+}
+
+.wel-scheme .book {
+  font-size: 14px;
+  margin-top: 20px;
+  transition: opacity 0.5s ease-out 1.5s;
+}
+
+.wel-scheme a span {
+  opacity: 0;
+}
+
+.wel-scheme a:hover span {
+  opacity: 1;
+}
+
+em {
+  color: red;
+}
+
+.SeasonWelfare .contract {
+  margin-top: -400px;
+}

@@ -1,0 +1,243 @@
+.exhibition-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.exhibition-content a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.exhibition-content img {
+  margin: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.exhibition-content .name {
+  position: absolute;
+  display: block;
+  top: -200px;
+  left: 45%;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  color: rgb(138, 16, 16);
+}
+
+.exhibition-content .data {
+  position: absolute;
+  display: block;
+  bottom: -200px;
+  left: 40%;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: wheat;
+}
+
+.exhibition-content a:hover .name {
+  top: 100px;
+}
+
+.exhibition-content a:hover .data {
+  bottom: 100px;
+}
+
+.exhibition-content a:hover img {
+  filter: sepia(70%);
+  transform: scale(0.9);
+}
+.more-head {
+  grid-column: full;
+  color: red;
+  text-align: center;
+}
+
+.more-scheme {
+  display: flex;
+  justify-content: space-around;
+}
+
+.more-scheme a {
+  position: relative;
+  margin: 40px 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.more-scheme div {
+  overflow: hidden;
+}
+.more-scheme .flex-left a {
+  transform: translateX(-1000px);
+}
+
+.more-scheme .flex-right a {
+  transform: translateX(2000px);
+  margin-top: 180px;
+}
+
+.more-scheme.flex .slide {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.more-scheme .tag {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: black;
+  color: red;
+  opacity: 0.7;
+  font-size: 18px;
+  clip-path: circle(40%);
+  display: flex;
+  justify-content: center;
+}
+
+.more-scheme .tag .WelName {
+  margin-right: 50px;
+}
+
+.more-scheme a:hover .tag {
+  bottom: 0px;
+}
+.about-us {
+  flex-direction: column;
+  background: url(../img/about-bg.jpg) no-repeat center;
+}
+.about-items {
+  justify-content: space-around;
+  margin: 50px;
+}
+.about-logo {
+  text-align: center;
+  margin: 50px;
+}
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: left;
+  width: 200px;
+}
+.about-item img {
+  transition: all 0.5s ease-in-out;
+  padding: 20px;
+}
+.about-item:hover img {
+  filter: drop-shadow(-1px 3px 1px red);
+}
+.medical {
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.medical-step {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+.step-number {
+  position: relative;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+.step-number .stroke-svg {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 8.5px);
+  /* width: 20px;
+  height: 30px; */
+}
+.step-number img {
+  transition: all 1s ease;
+  clip-path: circle(0% at 50% 0);
+}
+.active-step.medical-step img {
+  clip-path: circle(150% at 50% 0);
+}
+.medical-step:hover .step {
+  color: black;
+}
+.medical-step:hover .step-content {
+  border: 1px solid red;
+  border-bottom: 20px solid red;
+}
+.medical-step:hover .step-content::before {
+  border-bottom: 12px solid red;
+}
+span.step {
+  transition: all 0.8s ease;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.step-content {
+  position: relative;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+.step-content::before {
+  content: "";
+  top: -20px;
+  left: calc(50% - 7px);
+  border: 8px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.step-content::after {
+  content: "";
+  top: -18px;
+  left: calc(50% - 7px);
+  border: 8px solid transparent;
+  border-bottom: 12px solid black;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.step-title {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgb(255, 255, 255);
+  line-height: 1.875;
+  text-align: center;
+}
+.step-p {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 255, 255, 0.534);
+  line-height: 1.875;
+  text-align: center;
+}
+.css-m2heu9 {
+  stroke: red;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 0.5 10;
+  -webkit-animation: animation-yweh2o 400ms linear infinite;
+  animation: animation-yweh2o 400ms linear infinite;
+}
+
+@-webkit-keyframes animation-yweh2o {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+@keyframes animation-yweh2o {
+  to {
+    stroke-dashoffset: 10;
+  }
+}

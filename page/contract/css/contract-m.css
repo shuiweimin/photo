@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+  .contract-us-content {
+    flex-wrap: wrap;
+  }
+}

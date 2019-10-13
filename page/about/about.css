@@ -1,0 +1,241 @@
+.city-tip {
+  grid-column: full;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: red;
+}
+
+body {
+  background: url(banner.png) no-repeat center;
+}
+
+span.left {
+  transform: translate(600px);
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+span.right {
+  transform: translate(-600px);
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+.wel-banner .nav-logo {
+  margin-left: 0%;
+  z-index: 2;
+}
+
+.about-content {
+  justify-self: center;
+}
+.content-primary {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2.143;
+}
+.info-logo {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.numbers {
+  height: 60px;
+  width: 50px;
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+/* .numbers.n1 {
+  left: 14px;
+  top: 193.49px;
+}
+
+.numbers.n2 {
+  left: 270px;
+  top: 193.49px;
+}
+
+.numbers.n3 {
+  left: 306px;
+  top: 193.49px;
+}
+
+.numbers.n4 {
+  left: 342px;
+  top: 193.49px;
+}
+
+.numbers.n5 {
+  left: 378px;
+  top: 193.49px;
+}
+
+.numbers.n6 {
+  left: 414px;
+  top: 193.49px;
+}
+
+.numbers.n7 {
+  left: 617px;
+  top: 193.49px;
+}
+
+.numbers.n8 {
+  left: 653px;
+  top: 193.49px;
+}
+
+.numbers.n9 {
+  left: 689px;
+  top: 193.49px;
+}
+
+.numbers.n10 {
+  left: 725px;
+  top: 193.49px;
+} */
+.content-count {
+  display: flex;
+  justify-content: space-around;
+}
+
+.number-year,
+.number-hour,
+.number-picture {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 20px;
+}
+.number-hour::before {
+  content: "小时";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 254, 254, 0.4);
+  line-height: 0.999;
+}
+.number-picture::before {
+  content: "套";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 254, 254, 0.4);
+  line-height: 0.999;
+}
+.number-hour::after {
+  content: "时间/time";
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 254, 254, 0.4);
+  line-height: 0.999;
+}
+.number-picture::after {
+  content: "照片/picture";
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 254, 254, 0.4);
+  line-height: 0.999;
+}
+.number-year::after {
+  content: "年/year";
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 254, 254, 0.4);
+  line-height: 0.999;
+}
+.scroll-number {
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  color: white;
+  font-family: "Microsoft YaHei";
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.n1 .scroll-number {
+  transform: translateY(-407px);
+  transition-delay: 0s;
+}
+
+.n2 .scroll-number,
+.n7 .scroll-number {
+  transform: translateY(-646px);
+}
+
+.n3 .scroll-number {
+  transform: translateY(-488px);
+}
+
+.n4 .scroll-number,
+.n5 .scroll-number,
+.n6 .scroll-number,
+.n8 .scroll-number,
+.n9 .scroll-number {
+  transform: translateY(-725px);
+}
+
+.n10 .scroll-number {
+  transform: translateY(-92px);
+}
+
+.n2 .scroll-number,
+.n3 .scroll-number,
+.n4 .scroll-number,
+.n5 .scroll-number,
+.n6 .scroll-number {
+  transition-delay: 2s;
+}
+
+.n7 .scroll-number,
+.n8 .scroll-number,
+.n9 .scroll-number,
+.n10 .scroll-number {
+  transition-delay: 4s;
+}
+.content-info-c {
+  position: relative;
+}
+.content-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid rgb(221, 23, 23);
+  margin-top: 50px;
+  padding: 50px 5px;
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    100% 100%,
+    100% 0,
+    70% 0,
+    70% 5%,
+    30% 5%,
+    30% 0
+  );
+}
+.content-info img {
+  padding: 20px;
+}
+.content-info p {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2.143;
+}
+.about-content {
+  position: relative;
+}

@@ -1,0 +1,27 @@
+<svg width="20" height="30" viewBox="0 0 20 30" class="stroke-svg">
+
+  <path d="M10 70 L10 -10" class="css-m2heu9"></path>
+</svg>
+
+<style data-emotion-css="m2heu9 animation-yweh2o">
+    .css-m2heu9 {
+      stroke: red;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 0.5 10;
+      -webkit-animation: animation-yweh2o 400ms linear infinite;
+      animation: animation-yweh2o 400ms linear infinite;
+    }
+
+    @-webkit-keyframes animation-yweh2o {
+      to {
+        stroke-dashoffset: 10;
+      }
+    }
+
+    @keyframes animation-yweh2o {
+      to {
+        stroke-dashoffset: 10;
+      }
+    }
+  </style>

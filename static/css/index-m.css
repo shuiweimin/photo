@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  .more-scheme {
+    flex-wrap: wrap;
+  }
+  .more-scheme .flex-right a {
+    margin-top: 0px;
+  }
+  .about-items {
+    flex-wrap: wrap;
+  }
+  .about-item {
+    margin: 10px;
+  }
+  .about-item img {
+    padding: 0;
+  }
+  .about-logo {
+    display: none;
+  }
+  .more-scheme .tag {
+    bottom: 0px;
+    clip-path: circle(0%);
+  }
+  .tag-active .tag {
+    clip-path: circle(40%);
+  }
+  .medical {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .active-step.medical-step .step {
+    color: black;
+  }
+  .active-step.medical-step .step-content {
+    border: 1px solid red;
+    border-bottom: 20px solid red;
+  }
+  .active-step.medical-step .step-content::before {
+    border-bottom: 12px solid red;
+  }
+}

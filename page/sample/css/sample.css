@@ -1,0 +1,110 @@
+.wel-banner {
+  background: url(../img/banner.png);
+  height: 500px;
+  background-position: 0 0;
+  position: relative;
+}
+
+.wel-banner .nav-logo {
+  margin-left: 0%;
+}
+.meum div {
+  cursor: pointer;
+}
+.meum div:hover {
+  background: cornflowerblue;
+}
+.logo-text img {
+  position: absolute;
+  right: calc(10% + 50px);
+  top: 220px;
+}
+.sample-image .swiper-container {
+  margin: 20px 0;
+}
+@keyframes myfirst {
+  0% {
+    right: calc(10% + 50px);
+    top: 220px;
+    filter: contrast(100%);
+  }
+  25% {
+    right: calc(10% + 45px);
+    top: 215px;
+    filter: contrast(700%);
+  }
+  50% {
+    right: calc(10% + 50px);
+    top: 220px;
+    filter: contrast(100%);
+  }
+  75% {
+    right: calc(10% + 55px);
+    top: 225px;
+    filter: contrast(200%);
+  }
+  100% {
+    right: calc(10% + 45px);
+    top: 220px;
+    filter: contrast(100%);
+  }
+}
+
+.shadow {
+  opacity: 0.5;
+}
+
+.logo-text:hover .shadow {
+  animation: myfirst;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-iteration-count: 2;
+}
+
+.sample-tip {
+  grid-column: full;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: red;
+}
+
+span.left {
+  transform: translate(600px);
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+span.right {
+  transform: translate(-600px);
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+.meum {
+  display: flex;
+  justify-content: center;
+}
+
+.meum > div {
+  margin: 6px;
+  padding: 10px 20px;
+  border: 1px solid snow;
+  color: white;
+  font-size: 16px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.page > div {
+  margin: 10px;
+  color: white;
+  font-size: 14px;
+  padding: 3px 7px;
+}
+
+.page > div:hover {
+  background-color: red;
+}
